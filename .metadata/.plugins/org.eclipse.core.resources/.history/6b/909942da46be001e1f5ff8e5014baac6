@@ -1,0 +1,25 @@
+package ch03;
+
+import java.util.Scanner;
+
+// 예외: 프로그램 실행 중에 발생할 수 있는 예상치 못한 상황
+// 에러와의 차이는 에러가 발생하면 프로그램이 실행조차 되지 않지만,
+// 예외는 실행은 됨
+// 에러는 개발자가 처리하기 힘든 경우가 대부분이고 예외는 개발자가 직접 처리할 수 있음
+public class A_Exception {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		// 발생할 수 있는 예외
+		// - 사용자가 정수를 입력하지 않았을 때
+		// - 사용자가 0을 입력했을 때
+		int number = scanner.nextInt();
+		System.out.println(10 / number);
+		System.out.println("나누기 연산이 실행됐습니다.");
+		
+
+	}
+
+}

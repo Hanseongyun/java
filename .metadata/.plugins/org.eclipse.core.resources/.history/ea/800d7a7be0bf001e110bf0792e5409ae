@@ -1,0 +1,38 @@
+package test;
+
+import java.util.List;
+
+class Car {
+	String vin;
+	String color;
+	boolean isStart;
+	
+}
+
+class Train {
+	String trainNumber;
+	String departureStation;
+	String arrivalStation;
+	boolean isStart;
+}
+
+class MabualCar extends Car{
+	int gear;
+	
+	public void setGear() {
+		
+	}
+	
+
+}
+
+
+public class examD {
+
+	public static void main(String[] args) {
+
+		
+		
+	}
+
+}

@@ -1,0 +1,144 @@
+package test;
+
+import java.util.List;
+import java.util.Scanner;
+
+interface Vehicle {
+	public abstract void accelerate();
+	public abstract void stop();
+	public abstract void setStart();	
+}
+
+class Car {
+	String vin;
+	String color;
+	boolean isStart;
+}
+
+class Train {
+	String trainNumber;
+	String departureStation;
+	String arrivalStation;
+	boolean isStart;
+}
+
+class ManualCar extends Car implements Vehicle{
+	int gear;
+	
+	public void setGear() {
+		// 0-6까지의 정수를 입력 받아 기어 상태를 변경할 수 있는 기능, 기어 변속 기능이 존재
+		Scanner scr = new Scanner(System.in);
+		int num = scr.nextInt();
+		if (num <= 6) {
+		gear = num;
+		}
+	}
+
+	@Override
+	public void accelerate() {
+		System.out.println("수동 변속기 자동차가 가속합니다!");
+	}
+
+	@Override
+	public void stop() {
+		System.out.println("수동 변속기 자동차가 정차합니다!");
+	}
+
+	@Override
+	public void setStart() {
+		isStart = !isStart;
+	}
+}	
+
+class AutomaticCar extends Car implements Vehicle{
+
+	@Override
+	public void accelerate() {
+		System.out.println("자동 변속기 자동차가 가속합니다!");
+	}
+
+	@Override
+	public void stop() {
+		System.out.println("자동 변속기 자동차가 정차합니다!");
+	}
+
+	@Override
+	public void setStart() {
+		isStart = !isStart;
+	}
+	
+}
+
+class PassengerTrain extends Train implements Vehicle{
+	int passengerCount;
+
+	@Override
+	public void accelerate() {
+		System.out.println("여객 열차가 천천히 가속합니다!");
+	}
+
+	@Override
+	public void stop() {
+		System.out.println("여객 열차가 천천히 정차합니다!");
+	}
+
+	@Override
+	public void setStart() {
+		isStart = !isStart;
+	}
+}
+
+class FreightTrain  extends Train implements Vehicle{
+	double cargoWeight;
+
+	@Override
+	public void accelerate() {
+		System.out.println("화물 열차가 천천히 가속합니다!");
+	}
+
+	@Override
+	public void stop() {
+		System.out.println("화물 열차가 천천히 정차합니다!");
+	}
+
+	@Override
+	public void setStart() {
+		isStart = !isStart;
+	}
+}
+
+
+
+public class examD {
+
+	public static void main(String[] args) {
+
+		ManualCar ManualCarA = new ManualCar();
+		ManualCarA.vin = "10가1234";
+		ManualCarA.color = "blue";
+		ManualCarA.isStart = false;
+		// 기어상태추가
+		
+		AutomaticCar AutomaticCarA = new AutomaticCar();
+		AutomaticCarA.vin = "10가1234";
+		AutomaticCarA.color = "blue";
+		AutomaticCarA.isStart = false;
+		
+		PassengerTrain PassengerTrainA = new PassengerTrain();
+		PassengerTrainA.trainNumber = "KTX001";
+		PassengerTrainA.departureStation = "서울";
+		PassengerTrainA.arrivalStation = "부산";
+		PassengerTrainA.isStart = false;
+		PassengerTrainA.passengerCount = 200;
+		
+		FreightTrain FreightTrainA = new FreightTrain();
+		FreightTrainA.trainNumber = "Cargo001";
+		FreightTrainA.departureStation = "부산";
+		FreightTrainA.arrivalStation = "구미";
+		FreightTrainA.isStart = true;
+		FreightTrainA.cargoWeight = 100.0;
+		
+		
+	}
+
+}

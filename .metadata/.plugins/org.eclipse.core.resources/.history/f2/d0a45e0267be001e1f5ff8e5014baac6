@@ -1,0 +1,14 @@
+package test;
+
+public class test {
+
+	public static void main(String[] args) {
+		
+		int num = 123456789;
+		String str = Integer.toString(123456789);
+		str.length();
+		System.out.println(str.length());
+
+	}
+
+}

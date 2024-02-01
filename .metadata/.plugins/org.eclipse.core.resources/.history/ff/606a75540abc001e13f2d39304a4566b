@@ -1,0 +1,12 @@
+package ch02_sub;
+
+public class G_InterfaceSub {
+
+	void method1 () {
+		System.out.println("반갑습니다.");
+	}
+	
+	void method2 () {
+		System.out.println("반갑습니다.");
+	}
+}

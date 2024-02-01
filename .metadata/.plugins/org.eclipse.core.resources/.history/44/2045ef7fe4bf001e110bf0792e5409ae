@@ -1,0 +1,76 @@
+package test;
+
+import java.util.List;
+
+interface Vehicle {
+	public abstract void accelerate();
+	public abstract void stop();
+	public abstract void setStart();
+	
+}
+
+class Car {
+	String vin;
+	String color;
+	boolean isStart;
+	
+}
+
+class Train {
+	String trainNumber;
+	String departureStation;
+	String arrivalStation;
+	boolean isStart;
+}
+
+class ManualCar extends Car implements Vehicle{
+	int gear;
+	
+	public void setGear() {
+		
+	}
+
+	@Override
+	public void accelerate() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void stop() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setStart() {
+		// TODO Auto-generated method stub
+		
+	}
+}	
+
+class AutomaticCar extends Car{
+	
+}
+
+class PassengerTrain extends Train {
+	int passengerCount;
+}
+
+class FreightTrain  extends Train {
+	double cargoWeight;
+}
+
+
+
+
+
+public class examD {
+
+	public static void main(String[] args) {
+
+		
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package ch02.review;
+
+public class A_Instance {
+
+	public static void main(String[] args) {
+
+		// 객체(인스턴스): 
+
+	}
+
+}

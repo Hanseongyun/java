@@ -1,0 +1,27 @@
+package test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class test {
+
+	public static void main(String[] args) {
+		
+		int num = 123456789;
+		String str = Integer.toString(123456789);
+		str.length();
+		System.out.println(str.length());
+		
+		List<Integer> arrayList;
+		arrayList = new ArrayList<>();
+		System.out.println(arrayList);
+		arrayList.add(1);
+		System.out.println(arrayList);
+		arrayList.add(2);
+		
+//		int arrayElement = arrayList.get(0);
+//		System.out.println(arrayElement);
+		
+	}
+
+}

@@ -1,0 +1,25 @@
+package test;
+
+import java.util.Scanner;
+
+class Exam3 {
+	public int solution (int number) {
+	int sum = 0;
+		while (number > 0) {
+		sum += number %10; // sum = sum + number%10;
+		number /= 10;
+		} return sum;
+	}
+	
+
+	
+}
+
+public class exam {
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}

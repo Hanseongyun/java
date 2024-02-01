@@ -1,0 +1,29 @@
+package test;
+
+import java.util.Scanner;
+
+class exam1 {
+	public int solution() {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int numList[] ;
+		
+		
+		return 0;
+	}
+}
+
+
+public class examA {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int arr[][] = new int[n][n];
+
+		
+
+	}
+
+}

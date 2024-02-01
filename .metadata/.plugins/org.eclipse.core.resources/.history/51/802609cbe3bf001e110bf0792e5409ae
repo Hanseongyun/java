@@ -1,0 +1,58 @@
+package test;
+
+import java.util.List;
+
+interface Vehicle {
+	public abstract void accelerate();
+	public abstract void stop();
+	public abstract void setStart();
+	
+}
+
+class Car {
+	String vin;
+	String color;
+	boolean isStart;
+	
+}
+
+class Train {
+	String trainNumber;
+	String departureStation;
+	String arrivalStation;
+	boolean isStart;
+}
+
+class ManualCar extends Car{
+	int gear;
+	
+	public void setGear() {
+		
+	}
+}	
+
+class AutomaticCar extends Car{
+	
+}
+
+class PassengerTrain extends Train {
+	int passengerCount;
+}
+
+class FreightTrain  extends Train {
+	double cargoWeight;
+}
+
+
+
+
+
+public class examD {
+
+	public static void main(String[] args) {
+
+		
+		
+	}
+
+}
